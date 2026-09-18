@@ -1,0 +1,22 @@
+# Maven
+target/
+**/target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Local configuration
+application-local.yml
+**/application-local.yml
+
+# OS
+.DS_Store
+Thumbs.db
