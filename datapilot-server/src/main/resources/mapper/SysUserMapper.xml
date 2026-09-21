@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.datapilot.server.mapper.SysUserMapper">
+    <select id="selectByUsername"
+            resultType="com.datapilot.pojo.entity.SysUser">
+        select * from sys_user where username=#{username}
+    </select>
+
+    <select id="selectById"
+            resultType="com.datapilot.pojo.entity.SysUser">
+        select * from sys_user where id=#{id}
+    </select>
+</mapper>

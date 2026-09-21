@@ -1,4 +1,4 @@
-package com.datapilot.result;
+package com.datapilot.common.result;
 
 public class Result<T> {
     private Integer code;

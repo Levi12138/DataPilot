@@ -1,4 +1,4 @@
-package com.datapilot.exception;
+package com.datapilot.common.exception;
 
 public class BaseException extends RuntimeException{
     public BaseException(){

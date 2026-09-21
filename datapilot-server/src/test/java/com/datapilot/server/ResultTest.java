@@ -1,6 +1,6 @@
-package com.datapilot;
+package com.datapilot.server;
 
-import com.datapilot.result.Result;
+import com.datapilot.common.result.Result;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

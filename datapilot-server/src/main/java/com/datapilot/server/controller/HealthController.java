@@ -1,6 +1,6 @@
-package com.datapilot.controller;
+package com.datapilot.server.controller;
 
-import com.datapilot.result.Result;
+import com.datapilot.common.result.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

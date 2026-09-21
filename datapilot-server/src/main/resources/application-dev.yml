@@ -17,3 +17,8 @@ logging:
     root: INFO
     com.datapilot: DEBUG
     com.datapilot.mapper: DEBUG
+
+datapilot:
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration: 7200000

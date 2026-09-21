@@ -1,4 +1,4 @@
-package com.datapilot.exception;
+package com.datapilot.common.exception;
 
 public class BusinessException extends BaseException{
     public BusinessException(String message){

@@ -4,7 +4,7 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.datapilot.mapper.TestMapper">
+<mapper namespace="com.datapilot.server.mapper.TestMapper">
     <select id="getNameById"
             resultType="java.lang.String">
         select name from sys_test where id=#{id}
