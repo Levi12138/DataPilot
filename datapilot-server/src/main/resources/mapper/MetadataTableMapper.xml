@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.datapilot.server.mapper.MetadataTableMapper">
+    <insert id="insert"
+            useGeneratedKeys="true"
+            keyProperty="id">
+        insert into metadata_table(data_source_id,schema_name,table_name,table_comment,last_sync_time)
+        values(#{datasourceId},#{schemaName},#{tableName},#{tableComment},#{lastSyncTime})
+    </insert>
+
+    <delete id="deleteByDatasourceId">
+        delete from metadata_table
+        where data_source_id=#{datasourceId}
+    </delete>
+
+    <select id="selectByDatasourceId"
+            resultType="com.datapilot.pojo.entity.MetadataTable">
+        select * from metadata_table
+        where data_source_id=#{datasourceId}
+        order by table_name
+    </select>
+</mapper>

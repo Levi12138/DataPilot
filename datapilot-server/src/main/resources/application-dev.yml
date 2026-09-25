@@ -22,3 +22,5 @@ datapilot:
   jwt:
     secret: ${JWT_SECRET}
     expiration: 7200000
+  security:
+    datasource-aes-key: ${DATASOURCE_AES_KEY}
